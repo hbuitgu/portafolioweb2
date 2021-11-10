@@ -1,0 +1,588 @@
+body{
+    margin:0px;
+    padding: 0px;
+    font-family: poppins;
+    background-color: #111111;
+}
+/* inicio maquetacion de la barra de navegacion y el logo  */
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; */
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.navigation{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    z-index: 4;
+    background-image: linear-gradient(180deg, rgb(17,17,17) 15%, transparent);
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+}
+.menu li{
+    padding: 20px;
+}
+.logo{
+    height: 33px;
+    z-index: 3;
+}
+.logo img{
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+.menu li a {
+    color: #ffffffcc;
+}
+.hire-me{
+    color: #46a0f5;
+    z-index: 3;
+}
+.hire-me i{
+    margin-left: 4px;
+}
+.menu li a:hover{
+    color: rgba(233, 59, 59);
+    transition: all ease 0.5s;
+}
+.contratarme:hover{
+    color: rgba(233, 59, 59);
+    transition:  all ease 0.5s;
+} /* fin maquetacion de la barra de navegacion y el logo  */
+
+/* inicio maquetacion seccion principal main section  */
+#main{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow:hidden;
+    z-index: 1;
+}
+#main::before{
+    content: '';
+    position: absolute;
+    width:130%;
+    height: 100vh;
+    left: -20%;
+    top: -23%;
+    transform: rotate(-10deg);
+    background: linear-gradient(45deg, rgb(19,19,19) -10%, #141516);
+    z-index: -1;
+
+}
+.main-text{
+    position: absolute;
+    left: 15%;
+    top: 50%;
+    transform: translate(-15%,-50%);
+    width:500px;
+}
+.main-text h1{
+        color: #ffffff;
+        font-size: 2.5rem;
+        font-weight: 600;
+        text-shadow: 2px 2px 30px rgba(0,0,0,0.01);
+        margin: 0px;
+        line-height: 45px;
+}
+.main-text p {
+    color: #8a94a7c0;
+    font-size: 1rem;
+    margin: 0px;
+    margin-top: 10px;
+}
+.main-ul{
+    color: #dfe7f5c0;
+    font-size: 1rem;
+    margin: 0px;
+    margin-top: 10px;
+    font-size: small;
+}
+ 
+.main-btns{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+.main-btns a{
+    width:180px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.05);
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    border-radius: 10em;
+}
+.descarga-hv-btn {
+    background: linear-gradient(180deg, rgb(18, 55, 75) 15%, transparent);
+    margin-right: 20px;
+}
+.descarga-hv-btn:hover{
+    background-color: #0f7ce2;
+    transition: all ease 0.3s;
+}
+
+.contratarme-btn:hover{
+    background-color: #0f7ce2;
+    transition: all ease 0.3s;
+    
+}
+.contratarme-btn{
+    background:linear-gradient(180deg, rgb(18, 55, 75) 15%, transparent);
+}
+/* fin maquetacion seccion principal main section  */
+/* inicio maquetacion foto seccion principal y fonodo  */
+.perfil{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top:45%;
+    right: 5%;
+    transform: translate(-7%, -50%);
+}
+.perfil img {
+    width:100%;
+    height: 100%;
+    object-fit:contain;
+}
+.fondo-main{
+    position:absolute;
+    right: 0px;
+    top: 0px;
+    width: 45%;
+    height: 100%;
+}
+.fondo-main img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position:top;
+}
+/* fin  seccion principal main section  */
+/* inicio maquetacion habilidades */
+#skills{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto auto 50px auto;
+}
+.skills-text-section{
+    width: 400px;
+    }
+.Skill-heading span{
+    color: #416cdf;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1rem;
+}
+.Skill-heading h2 {
+    color: #ffffff;
+    font-size: 3.3rem;
+    margin: 0px;
+    font-weight: 400;
+    letter-spacing: 1px;
+
+}
+.s-box-container{
+    margin-top: 20px;
+}
+.skill-box{
+    display: flex;
+    margin: 10px 0px;
+}
+.s-box-icon{
+    margin-right: 12px;
+}
+.s-box-icon i{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#f0f0f011 ;
+    font-size: 2rem;
+}
+.skill-box strong{
+    color: #ffffff;
+    margin: 0px;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+.skill-box p{
+    color:#8a94a783;
+    font-size: 0.9rem;
+}
+.fa-html5{
+    color: #e06061;
+
+}
+.fa-css3-alt{
+    color: #5d85f3;
+
+}.fa-js{
+    color: #f9ca31;
+
+}
+.fa-php{
+    color: #c50f09;
+
+}
+.fa-android{
+    color: #089e35;
+
+}
+
+.progress-line{
+    position: relative;
+    height: 5px;
+    width: 100%;
+    background-color: #1d1d1d ;
+    border-radius: 10px;
+    box-shadow: inset 0px 1px 1px rgb(0,0,0,0.05),0px 1px rgb(54,54,54,0.8);
+    }
+    .progress-line span {
+        height: 100%;
+        width: 80%;
+        background: linear-gradient(90deg,#2788e2 20%,#3b43b8);
+        position: absolute;
+        border-radius: 10px;
+    }
+    .progress-line.html span{
+        width: 80%;
+    }
+    .progress-line.css span{
+        width: 60%;
+    }
+    .progress-line.js span{
+        width: 50%;
+    }
+    .progress-line.php span{
+        width: 20%;
+    }
+    .progress-line.android span{
+        width: 20%;
+    }
+    .progress-line span::before{
+        position: absolute;
+        content: '';
+        right: 0px;
+        top: -10px;
+        height: 0px;
+        width: 0px;
+        border: 7px solid transparent;
+        border-bottom-width:0px;
+        border-right-width:0px;
+        border-top-color:rgb(20, 98, 243)
+    }
+        .progress-line span::after{
+        position: absolute;
+        right: 0px;
+        top: -28px;
+        color: #ffffff;
+        font-size: 12px;
+        font-weight: 400;
+        background-color: rgb(20, 98, 243);
+        padding: 1px 8px;
+        border-radius: 3px;
+    }
+    .progress-line.html span::after{
+        content: '80%';
+    }
+    .progress-line.css span::after{
+        content: '60%';
+    }
+    .progress-line.js span::after{
+        content: '50%';
+    }
+    .progress-line.php span::after{
+        content: '20%';
+    }
+    .progress-line.android span::after{
+        content: '20%';
+    }
+    .skill-img{
+        width: 600px;
+        height:600px ;
+    }
+
+    .skill-img img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    /* maquetacion Mis proyectos--------*/
+    #introduction{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        z-index: 3;
+        position: relative;
+        text-align: center;
+        max-width: 80%;
+        border-top: 1px solid #292b32;
+        padding: 5px 0px;
+        border-bottom: 1px solid #292b32;
+        margin: 5px auto;
+        background-image: url(../images/bg.png);
+        background-size: 950px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+    #portafolio{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        text-align: center;
+        max-width: 80%;
+        padding: 5px 0px;
+        margin: 5px auto;
+        background-position: center;
+    }
+    .intro-heading{
+        width:60%;
+    }
+    .intro-heading strong{
+        color: #ffffff;
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+    .intro-heading p{
+        color: #f6f7fa63;
+    }
+    .subtitulo{
+    color: #ffffff;
+    font-size: 1 rem;
+    font-weight: 300;
+}
+.subtitulo p {
+    color: #f6f7fa63;
+}
+/* inicio maquetación mis servicios */
+#servicios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 3;
+    position: relative;
+}
+.servicios-titulo{
+    color: #ffffff;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    width:90%;
+    background-color: #141516;
+    padding: 10px;
+    display: flex;
+}
+.servicios-tipo-container{
+    width:90%;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+}
+.servicios-tipo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px 20px 20px 20px;
+}
+.servicios-tipo i{
+    font-size: 2.5rem;
+    background: linear-gradient(90deg,#2788e2 20%,#3b67b8);
+    margin-bottom: 10px;
+    margin-right: auto;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+ 
+}
+.servicios-tipo p{
+    color: #8a94a783;
+    font-size: 0.95rem;
+}
+.servicios-tipo strong{
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #e4e4e4;
+}
+/* fin maquetacion servicio */
+/* inicio maquetacion contacto y pie de pagina */
+#contacto{
+    width:90%;
+    height:50px;
+    background-color: #15181d;
+    display: flex;
+    margin: 60px auto;
+    padding: 10px 20px;
+    justify-content:center;
+    align-items: center;
+    background-position:center;
+    background-size: 200px;
+    
+}
+#contacto span{
+    color: #e4e4e4;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+#contacto a{
+    color: #ffffff;
+    width:160px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg,#2788e2 20%,#3b4eb8);
+}
+#contact{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#contact form{
+    width:600px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#contact form input,
+#contact form textarea{
+    width:100%;
+    height:50px;
+    margin:5px 0px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: #373a412d;
+    color: #ffffff;
+    border-radius: 5px;
+}
+#contact form textarea{
+    height: 150px;
+}
+#contact form input[type="submit"]{
+    height: 45px;
+    background: linear-gradient(90deg, #2065cc 20%,#3b58b8);
+    color: #ffffff;
+    text-transform: uppercase;
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #14151610;
+    padding: 10px;
+    margin-top: 50px;
+    border-top: 1px solid #272729;
+}
+.copyright{
+    color:#ffffff;
+}
+.footer-social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-social a{
+    width:35px;
+    height: 35px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #ffffff;
+    background-color: #292b3252;
+    margin: 5px;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+.footer-social a:hover{
+    background-color: #2993f7;
+    transition: all ease 0.5s;
+}
+::selection{
+    color: #e4e4e4;
+    background-color: #416cdf;
+}
+#servicios,
+#portafolio,
+#skills{
+    padding-top: 60px;
+}
+#portafolio{
+    padding-bottom: 40px;
+}
+
+/* maquetacion diseño web responsive  */
+
+.menu-icon,
+.menu-btn{
+    display: none;
+}
+
+@media(max-width:1200px){
+    .fondo-main{
+        display: none;
+    }
+    .perfil{
+        width:400px;
+        height: 400px;
+        right: 5%;
+        transform: translate(-5%,-50%);
+    }
+    .main-text{
+        left: 10%;
+        transform: translate(-10%,-50%);
+    }
+}
+@media(max-width:1000px){
+    .navigation{
+        justify-content: space-between;
+        height: 65px;
+        padding:35px 25px;
+    }
+    .navigation .menu{
+        display: none;
+        position: absolute;
+        top: 65px;
+        left: 0px;
+        background-color: #111111;
+        border-bottom: 4px solid #1b1b1b;
+        width:100%;
+        padding:0px;
+        margin: 0px;
+    }
+}

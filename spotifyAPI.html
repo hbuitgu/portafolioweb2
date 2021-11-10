@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="spotifyAPI.css">
+    <title>Spotify API</title>
+</head>
+<body>
+
+    <main>
+
+        <div class="container">
+
+          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img style="height: 600px;" src="https://i.ytimg.com/vi/L7mfjvdnPno/maxresdefault.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Trevor Daniel</h5>
+                  <p> Es un cantante y compositor estadounidense. Su primera canción fue lanzada en SoundCloud en agosto de 2015 llamado "indecis"</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img style="height: 600px;" src="https://plus.cusica.com/wp-content/uploads/2021/06/jualiamichaels-trevordaniel.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <p>Co-escribió la canción "Falling" de su mini álbum debut Homesick, lanzado en octubre de 2018, se volvió viral y llegó a las listas de éxitos en más de 20 países en 2019. </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img style="height: 600px;" src="https://yt3.ggpht.com/6BeB22Xiwdd4WJfXHsRdb0DXU-EhnNV499GlozlYCTq09ynxHdsDiS_9L1UKmVHMp_7XFqY_ng=s900-c-k-c0x00ffffff-no-rj" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                <p>Su primer álbum de estudio, Nicotine, también incluyó la canción "Falling"</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+          <br> <br>
+
+
+            <div class="row row-cols-1 row-cols-md-3 g-4" id="fila">
+
+            </div>
+        </div>
+    </main>
+
+    
+
+    <script src="spotifyAPI.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</body>
+</html>
